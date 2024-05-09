@@ -9,8 +9,8 @@ def outProjects = subprojects - project("test-mod")
 allprojects {
     apply plugin: "fabric-loom"
 
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 
     group = rootProject.maven_group
     version = rootProject.mod_version
@@ -29,7 +29,7 @@ allprojects {
         // see http://yodaconditions.net/blog/fix-for-java-file-encoding-problems-with-gradle.html
         it.options.encoding = "UTF-8"
 
-        it.options.release = 17
+        it.options.release = 21
     }
 
     java {
@@ -45,12 +45,12 @@ allprojects {
 
     javadoc {
         options {
-            source = "17"
+            source = "21"
             encoding = "UTF-8"
             charSet = "UTF-8"
             memberLevel = JavadocMemberLevel.PROTECTED
             links = [
-                    "https://docs.oracle.com/en/java/javase/17/docs/api/"
+                    "https://docs.oracle.com/en/java/javase/21/docs/api/"
             ]
             // Disable the crazy super-strict doclint tool in Java 8
             addStringOption("Xdoclint:none", "-quiet")

@@ -20,7 +20,7 @@
     ]
   },
   "depends": {
-    "java": ">=17",
+    "java": ">=21",
     "fabricloader": ">=0.11.3"
   }
 }
