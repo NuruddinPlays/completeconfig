@@ -17,7 +17,7 @@ import java.util.List;
 public abstract class ConfigScreenBuilder<T> {
 
     private final List<GuiProvider<T>> providers = new ArrayList<>();
-    protected Identifier background = Screen.OPTIONS_BACKGROUND_TEXTURE;
+    protected Identifier background = Screen.MENU_BACKGROUND_TEXTURE;
 
     protected ConfigScreenBuilder(List<GuiProvider<T>> globalProviders) {
         providers.addAll(globalProviders);
