@@ -12,7 +12,7 @@ dependencies {
 	}
 
 	testImplementation("org.junit.jupiter:junit-jupiter:$junit_version")
-	testImplementation("org.mockito:mockito-inline:$mockito_version")
+	testImplementation("org.mockito:mockito-core:$mockito_version")
 	testImplementation("org.mockito:mockito-junit-jupiter:$mockito_version")
 	testImplementation("com.google.jimfs:jimfs:$jimfs_version") {
 		exclude group: "com.google.guava", module: "guava"
